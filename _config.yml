@@ -9,7 +9,7 @@
 title: Yh' blog
 email: yangaov119@126.com
 description: "This is Yh's blog"
-baseurl: "/blog"
+baseurl: /blog
 url: "http://blog.yhao.me" # the base hostname & protocol for your site
 
 timezone: Asia/Shanghai
