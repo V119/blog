@@ -7,7 +7,7 @@
 
 # Site settings
 title: Yh' blog
-email: yangaov119@126.com
+email: yanghaov119@126.com
 description: "This is Yh's blog"
 url: "http://blog.yhao.me" # the base hostname & protocol for your site
 
@@ -18,7 +18,7 @@ paginate: 20
 highlighter: pygments
 
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  v119
 
 # Build settings
 markdown: kramdown
