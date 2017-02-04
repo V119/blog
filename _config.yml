@@ -9,17 +9,86 @@
 title: Yh' blog
 email: yanghaov119@126.com
 description: "This is Yh's blog"
-url: "http://blog.yhao.me" # the base hostname & protocol for your site
+#url: "http://blog.yhao.me" # the base hostname & protocol for your site
 
 timezone: Asia/Shanghai
 
 paginate: 20
 
-highlighter: pygments
+highlighter: rouge
 
-twitter_username: jekyllrb
 github_username:  v119
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+#permalink: pretty
+
+# Mandatory settings
+
+name: YH's blog
+paginate_path: "/posts/page/:num/"
+blog_theme: light # Or use dark
+
+# Optional settings
+
+discus_identifier: # Add your Disqus identifier
+ga_analytics: # Add your GA Tracking Id
+rss_enabled: true # Change to false if not
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
+social:
+  dribbble: # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
+  github: v119
+  linkedin: # Add your LinkedIn handle
+  twitter: # Add your Twitter handle
+  email: yanghaov119@gmail.com
+  bitcoin: # Add your Bitcoin link or address
+  weibo: 2193974030
+  qq: 928131755
+
+# Important settings (change at own risk)
+
+assets:
+  compress:
+    css: true
+    js: true
+  features:
+    automatic_img_size: false
+  sources:
+    - _assets/bower
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+include:
+  - _assets/fonts/*
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+gems:
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+permalink: posts/:slug
+
