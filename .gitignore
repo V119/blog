@@ -4,5 +4,4 @@ _site
 !.keep
 *.DS_Store
 /.asset-cache/*
-/_assets/bower/*
 .idea/
