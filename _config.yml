@@ -30,7 +30,7 @@ paginate_path: "/posts/page/:num/"
 blog_theme: light # Or use dark
 
 # Optional settings
-
+base: http://blog.yhao.com
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 rss_enabled: true # Change to false if not

@@ -7,10 +7,7 @@ set -e
 
 echo "Started deploying"
 
-# push master branch
-git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B) push master"
-git push -f -q origin master
+# Checkout gh-pages branch.
 
 # Build site.
 bower install
@@ -27,7 +24,7 @@ git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push -f -q origin gh-pages
 
 # Move back to previous branch.
-git pull origin master
+git checkout -
 bower install
 
 echo "Deployed Successfully!"
